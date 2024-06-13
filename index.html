@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/Logo.jpg">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Octavio Balverdi</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Octavio</h1>
+            <h2>Developer - Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/octavio.balverdi/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/BalverdiOctavio"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/octaviobalverdi/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/octavio-balverdi-"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/OctavioBalverdi"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Saludos! Soy un programador en prácticas con gran experiencia en React, HTML, CSS, JavaScript y MySQL. Mi enfoque radica en crear interfaces de usuario dinámicas con React, aprovechando sus capacidades para aplicaciones web modernas. Utilizo habilidades de HTML y CSS para diseñar páginas atractivas y funcionales. Mi experiencia con JavaScript se centra en la creación de aplicaciones interactivas. Puedo administrar bases de datos MySQL de manera eficiente para un manejo efectivo de los datos.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Date</h3>
+                    <ul>
+                        <li>
+                            <strong>Telephone</strong>
+                            381 6442730
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            octaviobalverdi2013@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <img src="img/games.ico" alt="games">
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/musica.ico" alt="musica">
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/viaje.ico" alt="viaje">
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/deportes.ico" alt="deportes">
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/fotos.ico" alt="fotos">
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CV">
+                <button>
+                    <a href="/cv/CVE.pdf" download="CV-Español.pdf">Download CV-Español</a> <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+                <button>
+                    <a href="/cv/CVI.pdf" download="CV-Ingles.pdf">Download CV-Inglish</a> <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="sobremi" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Frontend Development</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <img src="img/js.ico" alt="js">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/html.ico" alt="html">
+                            <span>HTML</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/css.ico" alt="css">
+                            <span>CSS</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/react.ico" alt="react">
+                            <span>React</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/electron.ico" alt="electron">
+                            <span>Electron</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/bootstrap.ico" alt="bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/TS.ico" alt="TS">
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Backend Development</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <img src="img/nodejs.ico" alt="node">
+                            <span>Node js</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/dbs-mysql.icns" alt="mysql">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/mongo.ico" alt="mongodb">
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo full-stack</h4>
+                        <span class="casa">UTN-frt</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Estudié programación en la UTN-Facultad Regional Tucumán, donde adquirí habilidades tanto en desarrollo front-end como back-end. La formación incluyó proyectos prácticos y el uso de tecnologías modernas, preparándome para crear aplicaciones completas y funcionales. Esta educación me ha proporcionado conocimientos y ganas de seguir perfeccionandome en el desarrollo de software</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Especializacion tecnologia web</h4>
+                        <span class="casa">UTN-frt</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Me formé en programación con un enfoque en desarrollo web. Durante mi carrera, adquirí competencias en HTML, CSS, JavaScript, React, Node.js y MySQL. Esta formación práctica y teórica me ha capacitado para construir aplicaciones web modernas y eficientes, preparándome para enfrentar desafíos en el desarrollo de software.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en Humanidades</h4>
+                        <span class="casa">Instituto Nicolas Avellaneda</span>
+                        <span class="fecha">2005 - 2012</span>
+                        <p>Colegio secundario terminado con titulo de humanidades</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>React MVVM nativo</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso de React Native desarrollo de aplicacion de casa de comida</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bootcamp React desde Cero</h4>
+                        <span class="casa">Oracle-Alura</span>
+                        <span class="fecha">2023</span>
+                        <p>Bootcamp de React desde cero con desarrollo de aplicaciones </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Quillenberries</span>
+                        <span class="fecha">Actualmente</span>
+                        <p>En pleno desarrollo conforme a una aplicación para una empresa de gatronomia congelada. el stack para dicho proyecto es web orientado a escritorio.?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">UTN-frt</span>
+                        <span class="fecha">Actualmente</span>
+                        <p>Desarrollando proyectos para culminacion de especializacion, tratando de abarcar diferente hambitos y puntos de vista en diseño y mejores practicas de seguridad e implementacion en produccion.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Reparacion de PC</h4>
+                        <span class="casa">FreeLance</span>
+                        <span class="fecha">Actualmente</span>
+                        <p>Reparacion, Limpieza y Formateo de pc</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/encriptador.jpg" alt="encriptador">
+                    <div class="overlay">
+                        <h3>Proyecto Alura</h3>
+                        <p>Encriptador</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/encriptador">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Demo</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Stock.jpg" alt="Stock">
+                    <div class="overlay">
+                        <h3>Empresa Equellin</h3>
+                        <p>Stock</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/Stock">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Demo</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio.jpg" alt="portafolio">
+                    <div class="overlay">
+                        <h3>Desarrollo en Proceso</h3>
+                        <p>Portafolio</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/OctavioBalverdi.github.io">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary"><a href="https://octavio-balverdi-github-io.vercel.app/">Demo</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/biblioteca.jpg" alt="biblioteca">
+                    <div class="overlay">
+                        <h3>Programacio 2</h3>
+                        <p>Bibiloteca</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/biblioteca">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Demo</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ecom.jpg" alt="ecom">
+                    <div class="overlay">
+                        <h3>Proyecto Ecommers</h3>
+                        <p>Zapatillas</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/prog3s">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Demo</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/cartilla.jpg" alt="cartilla">
+                    <div class="overlay">
+                        <h3>Proyecto Metodologia</h3>
+                        <p>Carilla Medica</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/Metodologia">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Demo</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyetofi.jpg" alt="proyectofi">
+                    <div class="overlay">
+                        <h3>Proyecto Final 3</h3>
+                        <p>Tienda De Ropa</p>
+                        <button type="button" class="btn btn-outline-info"><a href="https://github.com/OctavioBalverdi/FinalProg3">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Demo</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                 <div class="sobremi">
+                    <div class="col">
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <img src="img/mai.ico" alt="mail">
+                                <h4>Email</h4>
+                                 <a href="mailto:octaviobalverdi2013@hotmail.com" target='_blank' >Send a menssage</a>
+                            </div><br>
+                            <div class="interes">
+                                <img src="img/Whatsapp.ico" alt="Whatsapp">
+                                <h4>Whatsapp</h4>
+                                <a href="https://api.whatsapp.com/send?phone=543816442730" target='_blank'>Send a menssage</a>
+                            </div><br>
+                            <div class="interes">
+                                <img src="img/Messenger.ico" alt="Messenger">
+                                <h4>Messenger</h4>
+                                <a href="https://m.me/octavio.balverdi/" target='_blank'>Send a menssage</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/octavio.balverdi/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/BalverdiOctavio"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/octaviobalverdi/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/octavio-balverdi-"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/OctavioBalverdi"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
