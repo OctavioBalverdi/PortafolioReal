@@ -686,6 +686,7 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
@@ -731,33 +732,21 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    
 }
 
-.icon {
-    width: 24px; /* Tamaño pequeño por defecto */
-    height: 24px; /* Tamaño pequeño por defecto */
+icon {
+    width: 100%; /* Tamaño pequeño por defecto */
+    height: 100%; /* Tamaño pequeño por defecto */
   }
-  
-  /* Para pantallas pequeñas (por ejemplo, móviles) */
-  @media (max-width: 480px) {
-    .icon {
-      width: 16px; /* Tamaño más pequeño para móviles */
-      height: 16px; /* Tamaño más pequeño para móviles */
-    }
-  }
-  
-  /* Para pantallas medianas (por ejemplo, tablets) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    .icon {
-      width: 20px; /* Tamaño pequeño */
-      height: 20px; /* Tamaño pequeño */
-    }
-  }
-  
-  /* Para pantallas grandes (por ejemplo, desktops) */
-  @media (min-width: 769px) {
-    .icon {
-      width: 24px; /* Tamaño pequeño */
-      height: 24px; /* Tamaño pequeño */
-    }
-  }
+  #contacto .icon {
+    max-width: 100%;
+    height: auto;
+}
+.contenedor-interes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
